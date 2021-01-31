@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+
+.viewbox {
+    margin: auto;
+    min-height: 500px;
+    width: 50vw;
+    height: 70vh;
+    min-width: 700px;
+}
+.displayTimer {
+    height: 70%;
+    width: 100%;
+    
+}
+
+.timer{
+    margin: auto;
+    width:fit-content;
+    height: fit-content;
+    font-size: 150;
+}
+
+.configBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+}
+.timeInputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.inpContainer{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inpContainer > input {
+    width: 60%;;
+}
+.otherInputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.otherInputs {
+    margin: 0 15%;
+    justify-content: center;
+}
+.buttonI{
+    width: fit-content;
+    margin: 10px;
+    padding: 5px;
+}
+label{
+    width: fit-content;
+}
+input{
+    width: 15%;
+    font-size: 40;
+    text-align: center;
+
+}

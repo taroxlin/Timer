@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Timer!</title>
+    <link rel="icon" type="image/png/ico" href="./favicon.ico"/>
+</head>
+<body>
+    <div class="viewbox">
+        <div class="displayTimer">
+            <h1 class="timer" id="timerDisplay">00 Days<br>
+            00:00:00</h1>
+        </div>
+        <div class ="configBox">
+            <div class="timeInputs">
+                <div class="inpContainer">
+                    <label>Days</label>
+                    <input type="number" id="days_input" name= "days_input"  min="0" max="99" placeholder="0">
+                </div>
+                <div class="inpContainer">
+                    <label>Hours</label>
+                    <input type="number" id="hours_input" name= "hours_input" min="0" max="23" placeholder="0">
+                </div>
+                <div class="inpContainer">
+                    <label>Mins</label>
+                    <input type="number" id="mins_input" name= "mins_input"  min="0" max="59" placeholder="0">
+                </div>
+                <div class="inpContainer">
+                    <label>Secs</label>
+                    <input type="number" id="secs_input" name= "secs_input" min="0" max="59" placeholder="0">
+                </div>
+            </div>
+            <div class="otherInputs">
+                <input type="button" onClick="timer.buttonChange()" id="startStop"class="buttonI" value="Start">
+                <input type="button" onClick="timer.setup()" class="buttonI"value="Reset">
+                <div>
+                    <label>Repeat?</label>
+                    <input type="checkbox" id='checkboxInput' onClick="timer.checkBoxCheck()">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="inputs.js"></script>
+<script src="timer.js"></script>
+</html>
